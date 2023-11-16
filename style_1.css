@@ -14,18 +14,12 @@
   padding-right: calc(50% - 600px);
 }
 
-.header {
+header {
   background: url(./images/main_bg.jpg) no-repeat center center/cover;
   min-height: 100vh;
+  /* padding-top: 40px;
+  padding-bottom: 60px; */
   overflow: hidden;
-}
-
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 60px;
 }
 
 .overlay {
@@ -37,9 +31,43 @@ header {
   min-height: 100vh;
   background-color: rgba(51, 51, 51, 0.7);
 }
-.nav,
+
+.header {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative; */
+}
+
+.mw {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 2vw 0;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
 .left_side {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .logo {
@@ -76,23 +104,23 @@ header {
 .main_nav li a,
 .phone a {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.9px;
   border-bottom: 1px solid transparent;
-  transition: 0.5s;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 .main_nav li a:hover,
 .phone a:hover {
-  color: #ff8a22;
+  color: rgb(250, 200, 0);
   border-bottom: 1px solid #c7c7c7;
 }
 
-.main_nav li a.active,
-.phone a.active {
-  color: #ff8a22;
+.main_nav li a:active,
+.phone a:active {
+  color: rgb(150, 200, 0);
 }
 
 .o_xs_menu {
@@ -103,7 +131,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 0 94px;
+  height: 80vh;
 }
 
 .main_title {
@@ -118,13 +148,14 @@ header {
 .main_cont p {
   color: #fff;
   padding-top: 30px;
+  padding-bottom: 60px;
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0.9px;
   max-width: 800px;
-  padding-bottom: 30px;
 }
+
 .main_button {
   padding-left: 39px;
   width: 100%;
@@ -135,17 +166,25 @@ header {
   width: 100%;
   max-width: 300px;
   border-radius: 10px;
-  background-color: #ff8a22;
-  color: #fff;
-  font-size: 18px;
+  background-color: rgb(250, 200, 0);
+  color: #000;
+  font-size: 20px;
   font-weight: 500;
   line-height: 32px;
   letter-spacing: 0.9px;
   text-align: center;
-  border: none;
   padding: 12px 10px;
   cursor: pointer;
   display: block;
+}
+.main_button a:hover {
+  transition: 0.5s;
+  background-color: rgb(200, 200, 0, 1);
+  color: #000;
+}
+.main_button a:active {
+  background-color: rgb(250, 200, 0, 1);
+  color: #000;
 }
 @media (max-width: 575px) {
   .o_xs_menu {
