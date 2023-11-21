@@ -665,7 +665,7 @@ i#next {
     justify-content: space-between;
     align-items: center;
   }
-  .contacts .mw .cont .right_side {
+  .contacts .mw .cont .right_side .map {
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
