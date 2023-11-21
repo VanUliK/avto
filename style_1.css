@@ -665,6 +665,23 @@ i#next {
     justify-content: space-between;
     align-items: center;
   }
+
+  .contacts .mw .cont .left_side .c {
+    align-items: center;
+  }
+  .contacts .mw .cont .right_side {
+    display: flex;
+    justify-content: center;
+  }
+  .contacts .mw .cont .left_side .logo {
+    padding-bottom: 10px;
+  }
+  .contacts .mw .cont .left_side ul.info li {
+    padding-bottom: 10px;
+  }
+  .contacts .mw .cont .left_side .soc_icons {
+    padding-top: 10px;
+  }
   .contacts .mw .cont .right_side .map {
     width: 100%;
     padding-top: 30px;
