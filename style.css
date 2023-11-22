@@ -227,7 +227,7 @@ header {
   transition: 0.5s;
   margin: 0 20px;
   min-height: 550px;
-  border: solid 1px #ccc;
+  border: solid 1px rgb(250, 200, 0);
 }
 
 .service_block:hover {
