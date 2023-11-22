@@ -735,7 +735,15 @@ i#next {
 /* телефон альбом */
 @media (max-width: 540px) {
   .cont {
+    justify-content: space-between;
+    padding: 0 20px;
     padding-bottom: 30px;
+  }
+  .main_cont {
+    padding: 0 20px;
+  }
+  .main_button {
+    padding-left: 0px;
   }
   .o_xs_menu {
     display: block;
