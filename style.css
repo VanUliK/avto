@@ -235,7 +235,7 @@ header {
   box-shadow: 0 20px 64px 15px rgba(250, 200, 0, 0.1);
   transform: scale(1.1);
   z-index: 4;
-  border: solid 1px #ccc;
+  border: solid 1px rgb(250, 200, 0);
 }
 
 .service_icon {
@@ -342,6 +342,7 @@ header {
   position: relative;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border: solid 1px rgb(250, 200, 0);
 }
 .wrapper i.button {
   position: absolute;
