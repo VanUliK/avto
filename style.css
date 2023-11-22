@@ -734,6 +734,9 @@ i#next {
 
 /* телефон альбом */
 @media (max-width: 540px) {
+  .cont {
+    padding-bottom: 30px;
+  }
   .o_xs_menu {
     display: block;
   }
