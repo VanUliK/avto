@@ -754,6 +754,16 @@ i#next {
     margin: 30px auto;
     min-height: 100%;
   }
+  .remote_costing .mw .cont .right_side ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .remote_costing .mw .cont .right_side ul li {
+    margin-right: 0px;
+    padding-bottom: 10px;
+  }
   .contacts .mw .cont {
     flex-direction: column;
     justify-content: space-between;
