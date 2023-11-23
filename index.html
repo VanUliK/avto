@@ -36,30 +36,64 @@
             <div class="phone">
               <a href="tel:+79121018195" class="ya-phone">+7 (912) 101-81-95</a>
             </div>
-            <div class="o_xs_menu">
-              <img src="images/burger.svg">
+
+            <div class="container header__container">
+              <div class="menu-burger__header">
+                <span></span>
+              </div>
+
+              <!-- <nav class="header__nav">
+                <ul class="menu header__menu">
+                  <li><a href="" class="menu__item">Главная</a></li>
+                  <li><a href="" class="menu__item">Товары</a></li>
+                  <li><a href="" class="menu__item">Акции</a></li>
+                  <li><a href="" class="menu__item">Новинки</a></li>
+                  <li><a href="" class="menu__item">Доставка</a></li>
+                  <li><a href="" class="menu__item">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script>$(document).ready(function () {
+                $('.menu-burger__header').click(function () {
+                  $('.menu-burger__header').toggleClass('open-menu');
+                  $('.header__nav').toggleClass('open-menu');
+                  $('body').toggleClass('fixed-page');
+                });
+              });</script> -->
+              <div class="o_xs_menu">
+                <img src="images/burger.svg">
+              </div>
             </div>
           </div>
         </div>
 
-      </div>
+        <script>
+          let menuBtn = document.querySelector('.menu-btn');
+          let menu = document.querySelector('.menu');
 
-      <div class="main_cont">
-        <h1 class="main_title">
-          Кузовной ремонт и покраска автомобилей
-        </h1>
+          menuBtn.addEventListener('click', function () {
+            menuBtn.classList.toggle('active');
+            menu.classList.toggle('active');
+          })
+        </script>
 
-        <p>
-          Команда опытных мастеров, итальянское покрасочное оборудование и десятки идеально
-          выполненных работ - поможем устранить любые повреждения вашего автомобиля
+        <div class="main_cont">
+          <h1 class="main_title">
+            Кузовной ремонт и покраска автомобилей
+          </h1>
 
-        </p>
+          <p>
+            Команда опытных мастеров, итальянское покрасочное оборудование и десятки идеально
+            выполненных работ - поможем устранить любые повреждения вашего автомобиля
+          </p>
 
-        <div class="main_button">
-          <a href="#remote_costing" class="button">Рассчитать стоимость</a>
+          <div class="main_button">
+            <a href="#remote_costing" class="button">Рассчитать стоимость</a>
+          </div>
         </div>
       </div>
-    </div>
 
   </header>
 

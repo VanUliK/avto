@@ -1,62 +1,68 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+header {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.wrapper {
-  display: flex;
-  max-width: 650px;
-  width: 100%;
-  height: 400px;
-  background: #fff;
-  align-items: center;
-  justify-content: center;
+/* Гамбургер иконка */
+.menu-btn {
+  width: 30px;
+  height: 30px;
   position: relative;
-  border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-.wrapper i.button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 36px;
-  width: 36px;
-  background-color: #343f4f;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 36px;
-  color: #fff;
-  font-size: 15px;
-  transition: all 0.3s linear;
-  z-index: 100;
-  cursor: pointer;
-}
-i.button:active {
-  transform: scale(0.94) translateY(-50%);
-}
-i#prev {
-  left: 25px;
-}
-i#next {
-  right: 25px;
-}
-.image-container {
-  height: 320px;
-  max-width: 500px;
-  width: 100%;
+  z-index: 2;
   overflow: hidden;
 }
-.image-container .carousel {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  transition: all 0.4s ease;
+.menu-btn img {
+  color: #222222;
 }
-.carousel img {
+
+.menu-btn span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222222;
+  transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+  top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+  top: calc(50% + 5px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+/* Меню, которое будет появляться */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  min-width: 100%;
-  border-radius: 18px;
-  border: 10px solid #fff;
-  object-fit: cover;
+  padding: 15px;
+  background: #ffefba;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+
+.menu li {
+  list-style-type: none;
 }
