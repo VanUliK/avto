@@ -695,7 +695,7 @@ i#next {
   .menu-burger__header {
     position: relative; /* задаем относительное позиционирование */
     width: 40px; /* определяем размеры блока */
-    height: 21px;
+    height: 35px;
     display: block;
     margin-left: 10px;
   }
@@ -710,7 +710,7 @@ i#next {
     margin: 0 auto;
   }
   .menu-burger__header span {
-    top: 21px;
+    top: 16px;
   }
   .menu-burger__header:after,
   .menu-burger__header:before {
@@ -721,6 +721,21 @@ i#next {
   }
   .menu-burger__header:before {
     top: 5px;
+  }
+
+  .menu-burger__header.open-menu span {
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .menu-burger__header.open-menu:before {
+    transform: rotate(38deg);
+    top: 16px;
+    transition: 0.4s;
+  }
+  .menu-burger__header.open-menu:after {
+    transform: rotate(-38deg);
+    bottom: 16px;
+    transition: 0.4s;
   }
 
   .main_nav,
