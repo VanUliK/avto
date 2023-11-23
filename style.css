@@ -839,7 +839,6 @@ i#next {
   }
   .contacts .mw .cont {
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: center;
   }
 
@@ -889,59 +888,7 @@ i#next {
   }
   .remote_costing .mw .cont .right_side h5 {
     font-size: 18px;
+
     line-height: 20px;
   }
 }
-
-/* телефон портрет */
-/* @media (max-width: auto) {
-  .o_xs_menu {
-    display: block;
-  }
-  .main_nav,
-  .phone {
-    display: none;
-  }
-  .services_block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .service_block {
-    width: 100%;
-    max-width: 340px;
-    padding: 30px 20px;
-    margin: 30px auto;
-    min-height: 100%;
-  }
-  .contacts .mw .cont {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .contacts .mw .cont .left_side .c {
-    align-items: center;
-  }
-  .contacts .mw .cont .right_side {
-    display: flex;
-    justify-content: center;
-  }
-  .contacts .mw .cont .left_side .logo {
-    padding-bottom: 10px;
-  }
-  .contacts .mw .cont .left_side ul.info li {
-    padding-bottom: 10px;
-  }
-  .contacts .mw .cont .left_side .soc_icons {
-    padding-top: 10px;
-  }
-  .contacts .mw .cont .right_side .map {
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: 350px;
-    height: 400px;
-  }
-} */
