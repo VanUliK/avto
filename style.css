@@ -120,7 +120,7 @@ header {
 
 .main_nav li a:active,
 .phone a:active {
-  color: rgb(150, 200, 0);
+  color: rgb(200, 200, 0);
 }
 
 .o_xs_menu {
@@ -683,19 +683,57 @@ i#next {
   }
 }
 /* планшет */
-@media (max-width: 750px) {
+@media (max-width: 767px) {
   .title {
     font-size: 35px;
     line-height: 45px;
     padding-bottom: 10px;
   }
-  .o_xs_menu {
+  /* .o_xs_menu {
     display: block;
+  } */
+  .menu-burger__header {
+    position: relative; /* задаем относительное позиционирование */
+    width: 40px; /* определяем размеры блока */
+    height: 21px;
+    display: block;
+    margin-left: 10px;
   }
+
+  .menu-burger__header span,
+  .menu-burger__header:after,
+  .menu-burger__header:before {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #ffffff;
+    margin: 0 auto;
+  }
+  .menu-burger__header span {
+    top: 21px;
+  }
+  .menu-burger__header:after,
+  .menu-burger__header:before {
+    content: "";
+  }
+  .menu-burger__header:after {
+    bottom: 5px;
+  }
+  .menu-burger__header:before {
+    top: 5px;
+  }
+
   .main_nav,
   .phone {
     display: none;
   }
+  .soc_block {
+    display: block;
+  }
+  .soc_block .phone {
+    display: contents;
+  }
+
   .services_block {
     display: flex;
     justify-content: center;
@@ -760,13 +798,7 @@ i#next {
   .main_button {
     padding-left: 0px;
   }
-  .o_xs_menu {
-    display: block;
-  }
-  .main_nav,
-  .phone {
-    display: none;
-  }
+
   .services_block {
     display: flex;
     justify-content: center;
