@@ -699,6 +699,9 @@ i#next {
     display: block;
     margin-left: 10px;
   }
+  .menu-burger__header:hover {
+    cursor: pointer;
+  }
 
   .menu-burger__header span,
   .menu-burger__header:after,
