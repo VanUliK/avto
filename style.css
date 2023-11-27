@@ -464,7 +464,7 @@ i#next {
 }
 
 .remote_costing .mw .cont .right_side ul li a span {
-  padding-left: 8px;
+  /* padding-left: 5px; */
   transition: 0.5s;
 }
 
