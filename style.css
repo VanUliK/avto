@@ -689,8 +689,8 @@ i#next {
     padding-bottom: 10px;
   }
   .burger_logo {
-    width: 140px;
-    padding-top: 50px;
+    height: 250px;
+    padding-top: 35px;
     padding-bottom: 80px;
   }
   .burger_nav.active {
