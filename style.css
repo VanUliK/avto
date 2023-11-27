@@ -703,7 +703,6 @@ i#next {
     height: 120%;
     position: absolute;
     z-index: 4;
-    transition: transform 2s;
   }
   .burger_nav li {
     padding: 5px;
