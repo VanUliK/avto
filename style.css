@@ -698,7 +698,6 @@ i#next {
     height: 100%;
     position: absolute;
     z-index: 4;
-    transform: translateX(100%);
     transition: transform 1s;
   }
   .burger_nav li {
