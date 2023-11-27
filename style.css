@@ -275,12 +275,12 @@ header {
 
 .soc_block {
   position: fixed;
-  bottom: 37.5px;
-  right: 10.5px;
+  bottom: 37px;
+  right: 11px;
   cursor: pointer;
   z-index: 99;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: #fac800;
   display: flex;
@@ -535,7 +535,7 @@ i#next {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   max-width: 270px;
   margin: 0 auto;
 }
@@ -566,7 +566,7 @@ i#next {
 }
 
 .contacts .mw .cont .left_side .soc_icons {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .contacts .mw .cont .left_side .soc_icons h5 {
@@ -811,7 +811,7 @@ i#next {
 
   .contacts .mw .cont .left_side .c {
     padding-bottom: 20px;
-    align-items: flex-start;
+    /* align-items: flex-start; */
   }
   .contacts .mw .cont .right_side {
     display: flex;
