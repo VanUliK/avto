@@ -2,9 +2,33 @@ $(document).ready(function () {
   $('.menu-burger__header').click(function () {
     $('.menu-burger__header').toggleClass('open-menu');
     $('.nav').toggleClass('open-menu');
-
+    $('.burger_nav').toggleClass('active');
+    $('body').toggleClass('hidden');
   });
 });
+let service_link = document.querySelector('.service_link');
+service_link.addEventListener('click', function (e) {
+  $('body').toggleClass('hidden');
+  $('.menu-burger__header').toggleClass('open-menu');
+  $('.burger_nav').toggleClass('active');
+});
+let works_link = document.querySelector('.works_link'); works_link.addEventListener('click', function (e) {
+  $('body').toggleClass('hidden');
+  $('.menu-burger__header').toggleClass('open-menu');
+  $('.burger_nav').toggleClass('active');
+});
+let costing_link = document.querySelector('.costing_link'); costing_link.addEventListener('click', function (e) {
+  $('body').toggleClass('hidden');
+  $('.menu-burger__header').toggleClass('open-menu');
+  $('.burger_nav').toggleClass('active');
+});
+let contacts_link = document.querySelector('.contacts_link'); contacts_link.addEventListener('click', function (e) {
+  $('body').toggleClass('hidden');
+  $('.menu-burger__header').toggleClass('open-menu');
+  $('.burger_nav').toggleClass('active');
+});
+
+
 
 // Get the DOM elements for the image carousel
 const wrapper = document.querySelector(".wrapper"),

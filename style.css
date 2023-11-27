@@ -100,6 +100,9 @@ header {
   height: 100%;
   width: 100%;
 }
+.burger_nav {
+  display: none;
+}
 
 .main_nav li a,
 .phone a {
@@ -109,7 +112,7 @@ header {
   letter-spacing: 0.9px;
   border-bottom: 1px solid transparent;
   text-decoration: none;
-  transition: 0.5s;
+  transition: transform 0.5s;
 }
 
 .main_nav li a:hover,
@@ -121,10 +124,6 @@ header {
 .main_nav li a:active,
 .phone a:active {
   color: rgb(200, 200, 0);
-}
-
-.o_xs_menu {
-  display: none;
 }
 
 .main_cont {
@@ -689,15 +688,43 @@ i#next {
     line-height: 45px;
     padding-bottom: 10px;
   }
-  /* .o_xs_menu {
-    display: block;
-  } */
+  .burger_nav.active {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(51, 51, 51);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    transform: translateX(100%);
+    transition: transform 1s;
+  }
+  .burger_nav li {
+    padding: 5px;
+  }
+
+  .burger_nav li a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  .burger_nav li a:hover {
+    color: rgb(250, 200, 0);
+  }
+
   .menu-burger__header {
     position: relative; /* задаем относительное позиционирование */
     width: 40px; /* определяем размеры блока */
     height: 35px;
     display: block;
     margin-left: 10px;
+    z-index: 4;
   }
   .menu-burger__header:hover {
     cursor: pointer;
@@ -709,9 +736,13 @@ i#next {
     height: 3px;
     width: 100%;
     position: absolute;
-    background: #ffffff;
+    background: #fff;
     margin: 0 auto;
   }
+  .hidden {
+    overflow: hidden;
+  }
+
   .menu-burger__header span {
     top: 16px;
   }
