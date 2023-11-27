@@ -688,11 +688,16 @@ i#next {
     line-height: 45px;
     padding-bottom: 10px;
   }
+  .burger_logo {
+    width: 250px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
   .burger_nav.active {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: rgba(51, 51, 51);
     width: 100%;
     height: 100%;
