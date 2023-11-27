@@ -276,7 +276,7 @@ header {
 .soc_block {
   position: fixed;
   bottom: 38px;
-  right: 11px;
+  right: 10px;
   cursor: pointer;
   z-index: 99;
   width: 50px;
