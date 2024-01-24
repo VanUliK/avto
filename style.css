@@ -249,7 +249,11 @@ header {
   border: solid 1px rgb(250, 200, 0); */
   cursor: pointer;
 }
-
+.service_block small {
+  color: #928a7d;
+  display: flex;
+  justify-content: flex-end;
+}
 .service_icon {
   padding-bottom: 20px;
   width: 100%;
