@@ -76,3 +76,41 @@ buttons.forEach((button) => button.addEventListener("click", updateClick));
 wrapper.addEventListener("mouseover", () => clearInterval(intervalId));
 // Add mouseleave event listener to wrapper element to start auto sliding again
 wrapper.addEventListener("mouseleave", autoSlide);
+
+const allWork = document.querySelectorAll('.service_block'),
+  weld = document.querySelector('#service_block_1'),
+  straightening = document.querySelector('#service_block_2'),
+  paint = document.querySelector('#service_block_3'),
+  moto = document.querySelector('#service_block_4');
+
+
+weld.addEventListener('click', function (e) {
+  if (weld.lastElementChild.style.display === 'none') {
+    weld.lastElementChild.style.display = 'block';
+  } else {
+    weld.lastElementChild.style.display = 'none';
+  }
+});
+straightening.addEventListener('click', function (e) {
+  if (straightening.lastElementChild.style.display === 'none') {
+    straightening.lastElementChild.style.display = 'block';
+  } else {
+    straightening.lastElementChild.style.display = 'none';
+  }
+});
+paint.addEventListener('click', function (e) {
+  if (paint.lastElementChild.style.display === 'none') {
+    paint.lastElementChild.style.display = 'block';
+  } else {
+    paint.lastElementChild.style.display = 'none';
+  }
+});
+moto.addEventListener('click', function (e) {
+  if (moto.lastElementChild.style.display === 'none') {
+    moto.lastElementChild.style.display = 'block';
+    moto.lastElementChild.style.cursor = 'pointer';
+  } else {
+    moto.lastElementChild.style.cursor = 'pointer';
+    moto.lastElementChild.style.display = 'none';
+  }
+});

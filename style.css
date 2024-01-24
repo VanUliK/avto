@@ -242,12 +242,13 @@ header {
   margin-bottom: 20px;
 }
 
-/* .service_block:hover {
+.service_block:hover {
   box-shadow: 0 20px 64px 15px rgba(250, 200, 0, 0.1);
   transform: scale(1.1);
   z-index: 4;
   border: solid 1px rgb(250, 200, 0);
-} */
+  cursor: pointer;
+}
 
 .service_icon {
   padding-bottom: 20px;
@@ -267,8 +268,12 @@ header {
   font-weight: 700;
   line-height: 26px;
   text-align: center;
-  padding-bottom: 30px;
-  min-height: 80px;
+  padding-bottom: 20px;
+  /* min-height: 80px; */
+}
+
+.service_block ul {
+  display: none;
 }
 
 .service_block ul li {
