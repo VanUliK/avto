@@ -39,7 +39,7 @@ const wrapper = document.querySelector(".wrapper"),
   images = document.querySelectorAll(".carousel_img"),
   buttons = document.querySelectorAll(".button");
 
-let imageIndex = 1,
+let imageIndex = 0,
   intervalId;
 
 // Define function to start automatic image slider
