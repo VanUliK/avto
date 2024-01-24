@@ -192,6 +192,20 @@ header {
 .services {
   font-family: Lora, sans-serif !important;
 }
+.services .cont {
+  display: flex;
+  /* flex-direction: row;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: 0.5s;
+  padding-top: 40px;
+}
 .services .mw {
   padding: 5vh 15px;
   padding-bottom: 100px;
@@ -208,34 +222,32 @@ header {
   letter-spacing: 2.75px;
   text-align: center;
 }
-.services .cont {
-  padding-top: 40px;
-}
 .services_block {
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
 }
+
 .service_block {
   width: 100%;
-  max-width: 360px;
+  /* max-width: 800px; */
   border-radius: 10px;
   background-color: #e3e3e3;
   padding: 30px 20px;
   transition: 0.5s;
-  margin: 0 20px;
-  min-height: 550px;
+  /* margin: 20px 0; */
+  /* min-height: 550px; */
   border: solid 1px rgb(250, 200, 0);
+  margin-bottom: 20px;
 }
 
-.service_block:hover {
-  /* box-shadow: 0 20px 64px 15px rgba(0, 0, 0, 0.1); */
+/* .service_block:hover {
   box-shadow: 0 20px 64px 15px rgba(250, 200, 0, 0.1);
   transform: scale(1.1);
   z-index: 4;
   border: solid 1px rgb(250, 200, 0);
-}
+} */
 
 .service_icon {
   padding-bottom: 20px;
@@ -258,6 +270,7 @@ header {
   padding-bottom: 30px;
   min-height: 80px;
 }
+
 .service_block ul li {
   display: flex;
   flex-direction: row;
@@ -272,7 +285,15 @@ header {
   font-weight: 400;
   letter-spacing: 0.92px;
 }
-
+.service_block ul li span {
+  color: #d21212;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.92px;
+}
+.small {
+  font-size: small;
+}
 .soc_block {
   position: fixed;
   bottom: 42px;
@@ -289,7 +310,6 @@ header {
   align-items: center;
   display: none;
 }
-
 .fas_icon {
   transition: 0.5s ease-in-out;
   color: #fff;
@@ -664,7 +684,7 @@ i#next {
     align-items: center;
   }
   .service_block {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .m_title {
@@ -794,7 +814,7 @@ i#next {
   }
   .service_block {
     width: 100%;
-    max-width: 340px;
+    /* max-width: 340px; */
     padding: 30px 20px;
     min-height: 100%;
   }
@@ -859,7 +879,7 @@ i#next {
   }
   .service_block {
     width: 100%;
-    max-width: 340px;
+    /* max-width: 340px; */
     padding: 30px 20px;
     margin: 30px auto;
     min-height: 100%;
@@ -909,14 +929,14 @@ i#next {
   }
 
   .service_block {
-    max-width: 226px;
+    /* max-width: 226px; */
     padding: 30px 20px;
     margin: 15px auto;
   }
   .service_title {
     font-size: 18px;
-    text-align: center;
-    min-height: 80px;
+    /* text-align: center; */
+    /* min-height: 80px; */
   }
   .contacts .mw .cont .right_side .map {
     width: 100%;
