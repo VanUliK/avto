@@ -243,10 +243,10 @@ header {
 }
 
 .service_block:hover {
-  box-shadow: 0 20px 64px 15px rgba(250, 200, 0, 0.1);
+  /* box-shadow: 0 20px 64px 15px rgba(250, 200, 0, 0.1);
   transform: scale(1.1);
   z-index: 4;
-  border: solid 1px rgb(250, 200, 0);
+  border: solid 1px rgb(250, 200, 0); */
   cursor: pointer;
 }
 
