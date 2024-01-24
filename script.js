@@ -87,30 +87,41 @@ const allWork = document.querySelectorAll('.service_block'),
 weld.addEventListener('click', function (e) {
   if (weld.lastElementChild.style.display === 'none') {
     weld.lastElementChild.style.display = 'block';
+    straightening.lastElementChild.style.display = 'none';
+    paint.lastElementChild.style.display = 'none';
+    moto.lastElementChild.style.display = 'none';
+
   } else {
     weld.lastElementChild.style.display = 'none';
   }
 });
 straightening.addEventListener('click', function (e) {
   if (straightening.lastElementChild.style.display === 'none') {
+    weld.lastElementChild.style.display = 'none';
     straightening.lastElementChild.style.display = 'block';
+    paint.lastElementChild.style.display = 'none';
+    moto.lastElementChild.style.display = 'none';
   } else {
     straightening.lastElementChild.style.display = 'none';
   }
 });
 paint.addEventListener('click', function (e) {
   if (paint.lastElementChild.style.display === 'none') {
+    weld.lastElementChild.style.display = 'none';
+    straightening.lastElementChild.style.display = 'none';
     paint.lastElementChild.style.display = 'block';
+    moto.lastElementChild.style.display = 'none';
   } else {
     paint.lastElementChild.style.display = 'none';
   }
 });
 moto.addEventListener('click', function (e) {
   if (moto.lastElementChild.style.display === 'none') {
+    weld.lastElementChild.style.display = 'none';
+    straightening.lastElementChild.style.display = 'none';
+    paint.lastElementChild.style.display = 'none';
     moto.lastElementChild.style.display = 'block';
-    moto.lastElementChild.style.cursor = 'pointer';
   } else {
-    moto.lastElementChild.style.cursor = 'pointer';
     moto.lastElementChild.style.display = 'none';
   }
 });
