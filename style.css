@@ -37,6 +37,9 @@ header {
 .hidden {
   display: none;
 }
+.overflow {
+  overflow: hidden;
+}
 .mw {
   width: 100%;
   max-width: 1200px;

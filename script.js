@@ -9,10 +9,16 @@ const allWork = document.querySelectorAll('.service_block');
 for (let i = 0; i < allWork.length; i++) {
   let serviceBlock = allWork[i];
   serviceBlock.addEventListener('click', function (e) {
+    console.log(serviceBlock.lastElementChild.classList === 'hidden');
     serviceBlock.lastElementChild.classList.toggle("hidden");
     serviceBlock.childNodes[3].classList.toggle("hidden");
     serviceBlock.childNodes[3].classList.toggle("more");
 
+    if (serviceBlock.lastElementChild.classList.contains('hidden') === true) {
+      console.log('hidden');
+    } else {
+      console.log('show');
+    }
   });
 }
 
@@ -24,30 +30,30 @@ $(document).ready(function () {
     $('.menu-burger__header').toggleClass('open-menu');
     $('.nav').toggleClass('open-menu');
     $('.burger_nav').toggleClass('active');
-    $('body').toggleClass('hidden');
+    $('body').toggleClass('overflow');
   });
 });
 
 let service_link = document.querySelector('.service_link');
 service_link.addEventListener('click', function (e) {
-  $('body').toggleClass('hidden');
+  $('body').toggleClass('overflow');
   $('.menu-burger__header').toggleClass('open-menu');
   $('.burger_nav').toggleClass('active');
 });
 
 let works_link = document.querySelector('.works_link'); works_link.addEventListener('click', function (e) {
-  $('body').toggleClass('hidden');
+  $('body').toggleClass('overflow');
   $('.menu-burger__header').toggleClass('open-menu');
   $('.burger_nav').toggleClass('active');
 });
 
 let costing_link = document.querySelector('.costing_link'); costing_link.addEventListener('click', function (e) {
-  $('body').toggleClass('hidden');
+  $('body').toggleClass('overflow');
   $('.menu-burger__header').toggleClass('open-menu');
   $('.burger_nav').toggleClass('active');
 });
 let contacts_link = document.querySelector('.contacts_link'); contacts_link.addEventListener('click', function (e) {
-  $('body').toggleClass('hidden');
+  $('body').toggleClass('overflow');
   $('.menu-burger__header').toggleClass('open-menu');
   $('.burger_nav').toggleClass('active');
 });
