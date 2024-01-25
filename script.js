@@ -1,27 +1,16 @@
 
 
-const allWork = document.querySelectorAll('.service_block');
-// weld = document.querySelector('#service_block_1'),
-// straightening = document.querySelector('#service_block_2'),
-// paint = document.querySelector('#service_block_3'),
-// moto = document.querySelector('#service_block_4');
+let allWork = document.querySelectorAll('.service_block');
 
-for (let i = 0; i < allWork.length; i++) {
-  let serviceBlock = allWork[i];
-  serviceBlock.addEventListener('click', function (e) {
-    console.log(serviceBlock.lastElementChild.classList === 'hidden');
-    serviceBlock.lastElementChild.classList.toggle("hidden");
-    serviceBlock.childNodes[3].classList.toggle("hidden");
-    serviceBlock.childNodes[3].classList.toggle("more");
-
-    if (serviceBlock.lastElementChild.classList.contains('hidden') === true) {
-      console.log('hidden');
-    } else {
-      console.log('show');
-    }
+allWork.forEach(element => {
+  element.addEventListener('click', function (e) {
+    element.lastElementChild.classList.toggle("hidden");
+    element.childNodes[3].classList.toggle("hidden");
+    element.childNodes[3].classList.toggle("more");
   });
-}
-
+  // console.log('за циклом');
+  element.lastElementChild.classList.add("hidden");
+});
 
 
 
