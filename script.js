@@ -1,3 +1,24 @@
+
+
+const allWork = document.querySelectorAll('.service_block');
+// weld = document.querySelector('#service_block_1'),
+// straightening = document.querySelector('#service_block_2'),
+// paint = document.querySelector('#service_block_3'),
+// moto = document.querySelector('#service_block_4');
+
+for (let i = 0; i < allWork.length; i++) {
+  let serviceBlock = allWork[i];
+  serviceBlock.addEventListener('click', function (e) {
+    serviceBlock.lastElementChild.classList.toggle("hidden");
+    serviceBlock.childNodes[3].classList.toggle("hidden");
+    serviceBlock.childNodes[3].classList.toggle("more");
+
+  });
+}
+
+
+
+
 $(document).ready(function () {
   $('.menu-burger__header').click(function () {
     $('.menu-burger__header').toggleClass('open-menu');
@@ -30,6 +51,8 @@ let contacts_link = document.querySelector('.contacts_link'); contacts_link.addE
   $('.menu-burger__header').toggleClass('open-menu');
   $('.burger_nav').toggleClass('active');
 });
+
+
 
 
 
@@ -76,52 +99,3 @@ buttons.forEach((button) => button.addEventListener("click", updateClick));
 wrapper.addEventListener("mouseover", () => clearInterval(intervalId));
 // Add mouseleave event listener to wrapper element to start auto sliding again
 wrapper.addEventListener("mouseleave", autoSlide);
-
-const allWork = document.querySelectorAll('.service_block'),
-  weld = document.querySelector('#service_block_1'),
-  straightening = document.querySelector('#service_block_2'),
-  paint = document.querySelector('#service_block_3'),
-  moto = document.querySelector('#service_block_4');
-
-
-weld.addEventListener('click', function (e) {
-  if (weld.lastElementChild.style.display === 'none') {
-    weld.lastElementChild.style.display = 'block';
-    straightening.lastElementChild.style.display = 'none';
-    paint.lastElementChild.style.display = 'none';
-    moto.lastElementChild.style.display = 'none';
-
-  } else {
-    weld.lastElementChild.style.display = 'none';
-  }
-});
-straightening.addEventListener('click', function (e) {
-  if (straightening.lastElementChild.style.display === 'none') {
-    weld.lastElementChild.style.display = 'none';
-    straightening.lastElementChild.style.display = 'block';
-    paint.lastElementChild.style.display = 'none';
-    moto.lastElementChild.style.display = 'none';
-  } else {
-    straightening.lastElementChild.style.display = 'none';
-  }
-});
-paint.addEventListener('click', function (e) {
-  if (paint.lastElementChild.style.display === 'none') {
-    weld.lastElementChild.style.display = 'none';
-    straightening.lastElementChild.style.display = 'none';
-    paint.lastElementChild.style.display = 'block';
-    moto.lastElementChild.style.display = 'none';
-  } else {
-    paint.lastElementChild.style.display = 'none';
-  }
-});
-moto.addEventListener('click', function (e) {
-  if (moto.lastElementChild.style.display === 'none') {
-    weld.lastElementChild.style.display = 'none';
-    straightening.lastElementChild.style.display = 'none';
-    paint.lastElementChild.style.display = 'none';
-    moto.lastElementChild.style.display = 'block';
-  } else {
-    moto.lastElementChild.style.display = 'none';
-  }
-});
