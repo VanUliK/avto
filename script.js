@@ -94,3 +94,10 @@ buttons.forEach((button) => button.addEventListener("click", updateClick));
 wrapper.addEventListener("mouseover", () => clearInterval(intervalId));
 // Add mouseleave event listener to wrapper element to start auto sliding again
 wrapper.addEventListener("mouseleave", autoSlide);
+
+
+const divContainer = document.getElementById("main");
+
+setInterval(function () { divContainer.setAttribute("style", "background: url(./images/bg/Garage_03.jpg) no-repeat center center/cover") }, 3000);
+setInterval(function () { divContainer.setAttribute("style", "background: url(./images/bg/Garage_02.jpg) no-repeat center center/cover") }, 6000);
+setInterval(function () { divContainer.setAttribute("style", "background: url(./images/bg/Garage_04.jpg) no-repeat center center/cover") }, 9000);

@@ -17,9 +17,12 @@
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
-
+.header {
+  background: url(./images/bg/Garage_05.jpg) no-repeat center center/cover;
+}
 header {
-  background: url(./images/main_bg.jpg) no-repeat center center/cover;
+  /* background: url(./images/main_bg.jpg) no-repeat center center/cover; */
+  /* background: url(./images/bg/Garage_04.jpg) no-repeat center center/cover; */
   font-family: Lora, sans-serif !important;
   min-height: 100vh;
   overflow: hidden;
