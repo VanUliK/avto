@@ -73,6 +73,25 @@ header {
   height: auto;
 }
 
+.line_garage {
+  display: flex;
+  border-top: solid 2px #fac800;
+  color: #fac800;
+  justify-content: flex-end;
+  margin: 0 100px;
+  margin-top: 10px;
+  font-size: 30px;
+  padding-top: 5px;
+}
+
+.line_garage_phone {
+  display: none;
+  width: 150px;
+  border-top: solid 2px #fac800;
+  color: #fac800;
+  padding-top: 5px;
+}
+
 .logo a {
   width: 60px;
   display: block;
@@ -686,6 +705,9 @@ i#next {
   .main_title {
     font-size: 45px;
   }
+  .line_garage {
+    font-size: 25px;
+  }
 }
 @media (max-width: 850px) {
   .main_title {
@@ -693,6 +715,9 @@ i#next {
   }
   .title {
     font-size: 35px;
+  }
+  .line_garage {
+    font-size: 20px;
   }
   .main_cont p {
     line-height: 30px;
@@ -727,6 +752,18 @@ i#next {
     font-size: 35px;
     line-height: 45px;
     padding-bottom: 10px;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .line_garage_phone {
+    display: flex;
+    justify-content: center;
+  }
+  .line_garage {
+    display: none;
   }
   .burger_logo {
     height: 300px;
